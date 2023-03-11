@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="bar">
+            <div class="fill"></div>
+        </div>
+        <div class="counter">0%</div>
+        <button>Load more</button>
+    </div>
+
+    <div class="output">
+        <div class="text">Loading Complete</div>
+    </div>
+
+    <script>
+        let con = document.querySelector('.container')
+        let fill = document.querySelector('.fill')
+        let output = document.querySelector('.output')
+        let btn = document.querySelector('button')
+
+        btn.addEventListener('click', () => {
+            let a = 0;
+            let run = setInterval(processing, 1000)
+
+            function processing() {
+                a = a + 1;
+                if (a == 101) {
+                    clearInterval(run)
+                    con.style.display = 'none'
+                    output.style.display = 'block'
+
+                } else {
+                    let counter = document.querySelector('.counter')
+                    counter.textContent = a + '%';
+                    fill.style.width = a + '%';
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

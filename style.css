@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2rem;
+    color: #080808;
+}
+
+
+/* universal */
+
+.section-p1 {
+    padding: 75px 20px;
+}
+
+.section-m1 {
+    margin: 33px 24px;
+    border: solid blue;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+li {
+    display: inline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding: 0 22px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 13;
+}
+
+ul {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.normal-btn {
+    padding: 15px 33px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    background-color: #437ea0;
+    transition: all 0.3s ease;
+    border-color: rgb(39, 51, 56);
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(109, 90, 221);
+    background-image: url("../img/angle-r.svg");
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 7px;
+    width: 145px;
+    background-color: rgb(247, 247, 247);
+    height: 45px;
+    padding-left: 25px;
+    margin-top: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+    margin: 0;
+    font-family: inherit;
+    font-weight: 400;
+    color: inherit;
+}
+
+p {
+    font-family: inherit;
+    font-size: 1rem;
+    color: inherit;
+}
+
+
+/* header styling */
+
+nav h4 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #444444;
+}
+
+nav h4 span {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #686767;
+}
+
+.navigation-container {
+    padding: 7px 14px;
+}
+
+.navigation-container .list1 {
+    margin-bottom: 8px;
+}
+
+.navigation-container .list1 li {
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0 12px;
+    color: #686767;
+    border-left: 1.5px solid darkslateblue;
+}
+
+.navigation-container .list1 span {
+    color: #111111;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-right: 12px;
+}
+
+.navigation-container .list2 li {
+    color: #111111;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+.bg-1-contaniner {
+    background-image: linear-gradient(rgb(109, 90, 211), rgb(119, 90, 216));
+    height: 150vh;
+    width: 100%;
+    padding-top: 83px;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+}
+
+.image-content-header {
+    padding: 29px;
+    margin-top: 34px;
+    margin-left: 66px;
+}
+
+.image-content-header h2 {
+    margin-bottom: 22px;
+    font-size: 2.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 4rem;
+    color: #fff;
+}
+
+.image-content-header p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#m1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hdr1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    width: 80%;
+    padding: 0 28px;
+}
+
+.hdr1 a {
+    width: 27%;
+    height: 330px;
+    transition: all 0.4s linear;
+}
+
+.hdr1 a:hover {
+    transform: translateY(-20%);
+}
+
+.hdr1 a .a-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.hdr1 a .a-container img {
+    width: 100px;
+    height: fit-content;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hdr1 a .a-container h4 {
+    color: rgb(10, 233, 245);
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    text-transform: uppercase;
+    margin-top: 22px;
+}
+
+.hdr1 a .a-container p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: unset;
+    font-family: inherit;
+    margin: 22px 43px;
+}
