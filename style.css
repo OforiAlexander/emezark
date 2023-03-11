@@ -23,7 +23,6 @@ body {
 
 .section-m1 {
     margin: 33px 24px;
-    border: solid blue;
 }
 
 a {
@@ -46,6 +45,7 @@ nav {
     background-color: #fff;
     position: fixed;
     z-index: 13;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -74,6 +74,12 @@ ul {
     height: 45px;
     padding-left: 25px;
     margin-top: 50px;
+    cursor: pointer;
+}
+
+.normal-btn:hover {
+    background: linear-gradient(45deg, #f00144, #fd5900);
+    color: #fff;
 }
 
 h1,
@@ -139,20 +145,39 @@ nav h4 span {
     padding: 12px;
 }
 
+header nav li {
+    transition: all 0.3s linear;
+    border-bottom: 1px solid #fff;
+}
+
+header nav li:hover {
+    border-bottom: 1px solid #f00144;
+    color: #0e0f30;
+}
+
 .bg-1-contaniner {
     background-image: linear-gradient(rgb(109, 90, 211), rgb(119, 90, 216));
-    height: 150vh;
     width: 100%;
     padding-top: 83px;
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: center; */
 }
 
 .image-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 29px;
+    gap: 22px;
     margin-top: 34px;
     margin-left: 66px;
+}
+
+.img-header-holder {
+    width: 50%;
+    background: url(img/img-emezak/saas.png);
+    height: 500px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .image-content-header h2 {
@@ -231,4 +256,54 @@ nav h4 span {
     text-overflow: unset;
     font-family: inherit;
     margin: 22px 43px;
+}
+
+
+/* main section services 1 */
+
+#p1 {
+    padding: 30px 0;
+}
+
+.services-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 44px 26px;
+    gap: 12px;
+    background: #f9f9f9;
+    flex-grow: 1;
+    flex-basis: 50%;
+    width: 100%;
+}
+
+.svg-img-services {
+    width: 100%;
+    padding: 0 18px;
+}
+
+.svg-img-services img {
+    width: 65%;
+    margin-left: 23px;
+}
+
+.services-paragraphe-section {
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+    width: 100%;
+    padding-left: 33px;
+}
+
+.services-paragraphe-section h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 22px;
+    color: #111111;
+}
+
+.services-paragraphe-section p {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-top: 27px;
+    line-height: 1.5rem;
 }
